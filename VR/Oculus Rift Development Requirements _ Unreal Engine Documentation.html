@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head>
+	<script type="text/javascript">
+		var defaultHost = "https://www.unrealengine.com";
+		var trackingURL = "https://tracking.unrealengine.com/track.png";
+		var time = new Date(1560440344 * 1000);
+		var preview = false;
+		var relativeHTMLPath = "./../../../../../../";
+		var pageid = 7056;
+		var heroimage = "";
+				var lang = "";
+		if (document.location.href.indexOf("zh-CN") > -1) 
+		{
+			lang = "zh-CN";
+		} 
+		else if (document.location.href.indexOf("ja") > -1) 
+		{
+			lang = "ja";
+		} 
+		else if (document.location.href.indexOf("ko") > -1) 
+		{
+			lang = "ko";
+		} 
+		else if (document.location.href.indexOf("CHN") > -1) 
+		{
+			lang = "CHN";
+		} 
+		else if (document.location.href.indexOf("JPN") > -1) 
+		{
+			lang = "JPN";
+		} 
+		else if (document.location.href.indexOf("KOR") > -1) 
+		{
+			lang = "KOR";
+		}
+		else if (document.location.href.indexOf("INT") > -1) 
+		{
+			lang = "INT";
+		}
+		else
+		{
+			lang = "en-US";
+		}
+		var basePath = document.location.pathname.substring(0, document.location.pathname.indexOf(lang) + lang.length);
+		document.write('<base href="' + basePath + '/Platforms/VR/OculusVR/OculusRift/SDKRequirements/" />');
+	</script>
+    <title>Oculus Rift Development Requirements | Unreal Engine Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Cache-control" content="no-store">
+    <link rel="stylesheet" type="text/css" href="./../../../../../../Include/CSS/udn_public.css" />
+	    <link rel="stylesheet" type="text/css" href="./../../../../../../Include/CSS/jquery-ui.min.css" />
+    <script src="./../../../../../../Include/Javascript/CustomEvent.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/jquery-3.4.0.min.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/udn.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/udn_extras.js" type="text/javascript"></script>
+	    <script src="./../../../../../../Include/Javascript/informational.js" type="text/javascript"></script>
+	    <script src="./../../../../../../Include/Javascript/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/jquery.qtip.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./../../../../../../Include/CSS/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="./../../../../../../Include/CSS/jquery.qtip.css" />
+    <script src="./../../../../../../Include/Javascript/prettify.js" type="text/javascript"></script>
+    <!--<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="./../../../../../../Include/CSS/prettify.css" /> 
+    <link href="./../../../../../../Include/CSS/ytv.css" type="text/css" rel="stylesheet" />	
+	<link href="./../../../../../../Include/CSS/navBar.css" type="text/css" rel="stylesheet" />
+    <script src="./../../../../../../Include/Javascript/ytv.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/jquery.slimscroll.js" type="text/javascript"></script>
+    <link href="./../../../../../../Include/CSS/twentytwenty.css" type="text/css" rel="stylesheet" />
+    <script src="./../../../../../../Include/Javascript/symbol-es6.min.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/jquery.event.move.js" type="text/javascript"></script>
+    <script src="./../../../../../../Include/Javascript/jquery.twentytwenty.js" type="text/javascript"></script>
+	
+    <link rel="icon" href="./../../../../../../Include/Images/site_icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./../../../../../../Include/Images/site_icon.png" type="image/x-icon" />
+    <link href="./../../../../../../Include/Images/touch_icon.png" rel="apple-touch-icon" />
+    <link href="./../../../../../../Include/Images/touch_icon_114.png" sizes="114x114" rel="apple-touch-icon" />
+    
+	<!-- Navigation Bar scripts -->
+	<script src="./../../../../../../Include/Javascript/CollapsibleLists.js" type="text/javascript"></script>
+	<script src="./../../../../../../Include/Javascript/navigationBarUI.js"></script>
+	<script src="./../../../../../../Include/Javascript/navigationBar.js"></script>
+	<!--<link href="./../../../../../../Include/CSS/feedback.css" type="text/css" rel="stylesheet" />
+	<script src="./../../../../../../Include/Javascript/feedback.js"></script>
+	<script src="./../../../../../../Include/Javascript/html2canvas.js"></script>-->
+	<!--<script src="./../../../../../../Include/Javascript/history.js" type="text/javascript"></script>-->
+	<link rel="alternate" href="https://docs.unrealengine.com/latest/en-US/Platforms/VR/OculusVR/OculusRift/SDKRequirements/" hreflang="x-default" />
+<link rel="alternate" href="https://docs.unrealengine.com/latest/ko/Platforms/VR/OculusVR/OculusRift/SDKRequirements/" hreflang="ko" />
+<link rel="alternate" href="https://docs.unrealengine.com/latest/zh-CN/Platforms/VR/OculusVR/OculusRift/SDKRequirements/" hreflang="zh-CN" />
+<link rel="alternate" href="https://docs.unrealengine.com/latest/ja/Platforms/VR/OculusVR/OculusRift/SDKRequirements/" hreflang="ja" />
+
+	<meta name="availability" content="Public" />
+<meta name="title" content="Oculus Rift Development Requirements" />
+<meta name="description" content="Oculus Rift development requirements including hardware, software, and SDK information. " />
+<meta name="type" content="reference" />
+<meta name="version" content="4.22" />
+<meta name="parent" content="Platforms/VR/OculusVR/OculusRift" />
+<meta name="tags" content="Specifications" />
+<meta name="tags" content="Oculus" />
+<meta name="order" content="11" />
+<meta name="id" content="7056" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="og:title" content="Oculus Rift Development Requirements" />
+	<meta property="og:description" content="Oculus Rift development requirements including hardware, software, and SDK information. " />
+	
+</head>
+<body id="webbgThree">
+	<script>window.__tracking_base = 'https://tracking.unrealengine.com';</script>
+	<script src="https://tracking.unrealengine.com/tracking.js" async></script>
+    <div id="crumbs_bg"></div>
+    <div id="webThree">
+		<div id="page_head">
+			<div id="head">
+				<div id="logo"></div>
+			</div>
+			<div id="pagenav">
+				<div class="crumbs" id="crumbs">
+<a id="parent_link" href="../../../../../index.html">Unreal Engine 4 Documentation</a>
+<span class="separator">></span>
+<a id="parent_link" href="../../../../index.html">Platform Development</a>
+<span class="separator">></span>
+<a id="parent_link" href="../../../index.html">Virtual Reality Development</a>
+<span class="separator">></span>
+<a id="parent_link" href="../../index.html">Developing for Oculus VR</a>
+<span class="separator">></span>
+<a id="parent_link" href="../index.html">Oculus Rift</a>
+<span class="separator">></span>
+<span id="page">Oculus Rift Development Requirements</span>
+</div>
+				<!-- Start of Search -->
+				<div id="search_container">
+					<form name="bodySearch" method="get" action="https://www.unrealengine.com/en-US/bing-search" onsubmit="return validateSearch()">
+						<input type="image" src="./../../../../../../Include/Images/search_box_icon.png" class="searchbutton"/>
+						<input type="hidden" name="filter" value="Documentation" />
+						<input type="text" name="keyword" placeholder="Search Documentation..." class="searchbox" autocomplete="off"/>
+					</form>
+				</div>
+				<!-- End of Search -->
+			</div>
+		</div>
+		<div id="navWrapper">
+			<nav id="navPanel">
+			</nav>
+			<div id="navigation" title="Click to toggle navigation menu"><span>></span></div>
+		</div>		
+		<div id="splitter">
+		</div>
+		<div id="contentContainer">
+					<div id="pagedefault">
+				<div id="pagecontainer" style="padding-right:0px;">
+					<!-- Start of Markdown converted page content -->
+															<div class="hero  ">
+												<div class="info">
+							<div id="pageTitle">
+								<h1 id="H1TitleId">Oculus Rift Development Requirements</h1>
+							</div>	
+							<h2 >Oculus Rift development requirements including hardware, software, and SDK information. </h2>
+														<div id="access">
+								<div class="accessContainer">
+									<div class="version_tag_filter 4_22"><a id="version_link" href="./../../../../../../en-US/SiteIndex/index.html?versions=4_22">Unreal Engine 4.22</a></div>
+																										</div>
+							</div>
+													</div>
+					</div>
+										<div id="osContainer">
+	<div id="osSelect" class="btn btn-os" onclick="$('#osMenu').toggle();"></div>
+	<div id="osMenu">
+		<div id="windows" class="btn btn-select" onclick="setSelector('OS', 'windows');$('#osMenu').hide();">Windows</div>
+		<div id="mac" class="btn btn-select" onclick="setSelector('OS', 'mac');$('#osMenu').hide();">MacOS</div>
+		<div id="linux" class="btn btn-select" onclick="setSelector('OS', 'linux');$('#osMenu').hide();">Linux</div>
+	</div>
+</div>					<div id="maincol">
+						
+						
+												<div class="toc">
+<div style="position:relative;">
+    <div class="title">
+    On this page
+    </div>
+<div id="tocScroll">
+    <ul>
+	    		    			    <li id="">
+	<p><a id="toc_link" href="#unrealengine4.22">Unreal Engine 4.22</a></p>
+	</li>		    			    <li id="">
+	<p><a id="toc_link" href="#unrealengine4.21">Unreal Engine 4.21</a></p>
+	</li>		    			    <li id="">
+	<p><a id="toc_link" href="#unrealengine4.20">Unreal Engine 4.20</a></p>
+	</li>		    			    <li id="">
+	<p><a id="toc_link" href="#unrealengine4.19">Unreal Engine 4.19</a></p>
+	</li>		    	        </ul>
+</div>
+</div>
+</div>
+<p>In this page you'll find hardware and software development kit (SDK) requirements needed to start developing for the <a id="content_link" href="../index.html" ><span>Oculus Rift</span></a> platform. 
+</p><h2 id="unrealengine4.22">Unreal Engine 4.22</h2>
+
+<table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Hardware Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Recommended Desktop Hardware</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a><br /><a id="content_link" href="../../../../../GettingStarted/RecommendedSpecifications/index.html" ><span>Hardware and Software Specifications</span></a>
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Supported VR Headsets</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a></p>
+		</td>
+	
+</tr>
+</tbody>
+</table><table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Software Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Desktop Operating System</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Windows 7 or later<br />MacOS 10.10 or later (x86 only)
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>SDK Version</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Oculus Runtime 1.28</p>
+		</td>
+	
+</tr>
+</tbody>
+</table><div class="note">
+	<p>The currently supported SDK version(s) can be found in <code >UEBuildTODO.cs</code>. You can find it in your <code >&#91;UE4 Root Director&#93;/Engine/Source/Programs/UnrealBuildTool/Platforms/TODO</code> folder.
+</p>
+</div><h2 id="unrealengine4.21">Unreal Engine 4.21</h2>
+
+<table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Hardware Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Recommended Desktop Hardware</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a><br /><a id="content_link" href="../../../../../GettingStarted/RecommendedSpecifications/index.html" ><span>Hardware and Software Specifications</span></a>
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Supported VR Headsets</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a></p>
+		</td>
+	
+</tr>
+</tbody>
+</table><table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Software Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Desktop Operating System</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Windows 7 or later.<br />MacOS 10.10 or Later (x86 only)
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>SDK Version</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Oculus Runtime 1.28</p>
+		</td>
+	
+</tr>
+</tbody>
+</table><div class="note">
+	<p>The currently supported SDK version(s) can be found in <code >UEBuildTODO.cs</code>. You can find it in your <code >&#91;UE4 Root Director&#93;/Engine/Source/Programs/UnrealBuildTool/Platforms/TODO</code> folder.
+</p>
+</div><h2 id="unrealengine4.20">Unreal Engine 4.20</h2>
+
+<table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Hardware Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Recommended Desktop Hardware</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a><br /><a id="content_link" href="../../../../../GettingStarted/RecommendedSpecifications/index.html" ><span>Hardware and Software Specifications</span></a>
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Supported VR Headsets</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a></p>
+		</td>
+	
+</tr>
+</tbody>
+</table><table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Software Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Desktop Operating System</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Windows 7 or later.<br />MacOS 10.10 or Later (x86 only)
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>SDK Version</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Oculus Runtime 1.25</p>
+		</td>
+	
+</tr>
+</tbody>
+</table><div class="note">
+	<p>The currently supported SDK version(s) can be found in <code >UEBuildTODO.cs</code>. You can find it in your <code >&#91;UE4 Root Director&#93;/Engine/Source/Programs/UnrealBuildTool/Platforms/TODO</code> folder.
+</p>
+</div><h2 id="unrealengine4.19">Unreal Engine 4.19</h2>
+
+<table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Hardware Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Recommended Desktop Hardware</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a><br /><a id="content_link" href="../../../../../GettingStarted/RecommendedSpecifications/index.html" ><span>Hardware and Software Specifications</span></a>
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Supported VR Headsets</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>See <a id="content_link" href="https://developer.oculus.com/documentation/mobilesdk/latest/concepts/mobile-reqs/#mobile-reqs" ><span>Oculus' System and Hardware Requirements</span></a></p>
+		</td>
+	
+</tr>
+</tbody>
+</table><table>
+	<caption></caption>
+	<col align=""/>
+	<col align=""/>
+	<thead>
+		<tr>
+	<th rowspan="1" colspan="2" >
+		<p>Software Requirements </p>
+		</th>
+	
+</tr>
+	</thead>
+<tbody>
+<tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>Desktop Operating System</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Windows 7 or later.<br />MacOS 10.10 or Later (x86 only)
+</p>
+		</td>
+	
+</tr><tr>
+	<td rowspan="1" colspan="1" align="">
+		<p><strong>SDK Version</strong></p>
+		</td>
+		<td rowspan="1" colspan="1" align="">
+		<p>Oculus Runtime 1.17</p>
+		</td>
+	
+</tr>
+</tbody>
+</table><div class="note">
+	<p>The currently supported SDK version(s) can be found in <code >UEBuildTODO.cs</code>. You can find it in your <code >&#91;UE4 Root Director&#93;/Engine/Source/Programs/UnrealBuildTool/Platforms/TODO</code> folder.
+</p>
+</div>
+					</div>
+					<!-- End of Markdown converted page content -->
+				</div>
+								<div id="pageTags">
+				<div class="title">Tags</div>
+					<div>
+					<div class="keyword_tag_filter"><a id="tag_link" href="./../../../../../../en-US/SiteIndex/index.html?tags=Specifications">Specifications</a></div>
+<div class="keyword_tag_filter"><a id="tag_link" href="./../../../../../../en-US/SiteIndex/index.html?tags=Oculus">Oculus</a></div>
+					</div>
+				</div>
+							</div>
+			<div id="footer"></div>
+		</div>
+	</div>
+	<div id="feedbackButton" class="btn-comment attract" title="Have Feedback?">
+</div>	<div id="feedbackMessage" class="feedbackBanner">
+	<p>
+		<strong>Welcome to the new Unreal Engine 4 Documentation site!</strong>
+	</p>
+	<p>
+		We're working on lots of new features including a feedback system so you can tell us how we are doing. It's not quite ready for use in the wild yet, so head over to the Documentation Feedback forum to tell us about this page or call out any issues you are encountering in the meantime.
+	</p>
+	<p>
+		We'll be sure to let you know when the new system is up and running.
+	</p>
+	<div>
+				<div class="btn btn-lrg btn-default action" style="float:right;" onclick="$('.feedbackBanner').hide();window.open('https://forums.unrealengine.com/unreal-engine/feedback-for-epic/documentation-feedback/1625105-feedback-on-the-new-docs-site');">
+			Post Feedback
+		</div>
+	</div>
+	<div id="feedbackClose" class="btn-close" title="Close">
+	</div>
+</div></body>
+</html>
+
